@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Use "stream-card" or "career-option" class as needed for each HTML file */
+.stream-card,
+.career-option {
+    background: linear-gradient(to right, rgba(202, 202, 243, 0.8), rgba(162, 173, 217, 0.8), rgba(123, 146, 191, 0.8), rgba(82, 119, 166, 0.8), rgba(31, 93, 141, 0.8));
+    width: 80%; /* Increase card width */
+    margin: 10px auto 20px; /* Increase margin-bottom for spacing */
+    padding: 30px; /* Increase padding */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 20px; /* Increase font size */
+    text-align: center; /* Center-align text */
+}
+
+/* Add styles for card hover effect if needed */
+.stream-card:hover,
+.career-option:hover {
+    transform: scale(1.03);
+}
+
+/* Add styles for images if needed */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Increase margin for spacing */
+}
+
