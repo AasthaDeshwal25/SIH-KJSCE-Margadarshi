@@ -1,0 +1,43 @@
+/* Styling for the Hero section container */
+.hero-section {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* overflow: hidden; */
+  }
+  
+  /* Styling for the carousel slides */
+  .slick-slider {
+    position: relative;
+    display: block;
+  }
+  
+  /* Styling for the carousel slide images */
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styling for the dot navigation container */
+  .dot-navigation {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for individual dots */
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .dot.active {
+    background-color: #007bff; /* Change this color to your desired active color */
+  }
+  

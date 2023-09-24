@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 1 Details</title>
+    <link rel="stylesheet" href="styles (2).css">
+</head>
+<body>
+    <div class="analysis-cards">
+        <h1 class="center">Student's Details</h1>
+        <div class="analysis-card">
+            <h2>Career Analysis Report</h2>
+            <p>This section contains the career analysis report for Student 1. You can find information about the student's career interests, skills, and recommendations.</p>
+            <a href="report.pdf" target="_blank" class="view-report">View Career Report</a>
+        </div>
+        <div class="analysis-card">
+            <h2>Mental Health Analysis Report</h2>
+            <p>This section contains the mental health analysis report for Student 1. You can find information about the student's mental health assessment and recommendations.</p>
+            <a href="report.pdf" target="_blank" class="view-report">View Mental Health Report</a>
+        </div>
+        <button class="start-video-chat" onclick="startVideoChat('student1')">Start Video Chat</button>
+
+    <script>
+        async function startVideoChat(studentId) {
+            const constraints = { video: true, audio: true };
+            
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                const videoElement = document.createElement('video');
+                videoElement.srcObject = stream;
+                videoElement.autoplay = true;
+                document.body.appendChild(videoElement);
+            } catch (error) {
+                console.error('Error accessing webcam:', error);
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
+

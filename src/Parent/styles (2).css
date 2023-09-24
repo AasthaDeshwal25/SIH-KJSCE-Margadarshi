@@ -1,0 +1,96 @@
+/* Reset default browser styles */
+html, body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(202, 202, 243, 0.8), rgba(162, 173, 217, 0.8), rgba(123, 146, 191, 0.8), rgba(82, 119, 166, 0.8), rgba(31, 93, 141, 0.8));
+    background-size: cover; /* Ensure the gradient covers the entire background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.student-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.student-card {
+    width: 500px; /* Default card size */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    margin: 200px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.student-card:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Adjust text color for better readability */
+    text-align: center;
+}
+
+.view-details {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.resources {
+    width: 500px; /* Default card size */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    margin-right: 200px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.view-details:hover {
+    background-color: #555;
+}
+
+.start-video-chat {
+    background-color: #ff5722; /* Adjust the color as needed */
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increase padding to make it larger */
+    font-size: 18px; /* Increase font size */
+    cursor: pointer;
+    border-radius: 5px; /* Add some border radius for a rounded appearance */
+    margin-top: 20px; /* Add margin to separate it from other content */
+    display: block; /* Ensure it takes full width */
+    text-align: center; /* Center-align text */
+}
+
+.start-video-chat:hover {
+    background-color: #e64a19; /* Change color on hover */
+}
+
+.center {
+    text-align: center;
+}

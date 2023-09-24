@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselors' Web Page</title>
+    <link rel="stylesheet" href="styles (2).css">
+</head>
+<body>
+    <div class="student-list">
+        <div class="student-card">
+            <h2>Student ' Details</h2>
+            <button class="view-details" onclick="redirectToDetails('stu1.html')">View Details</button>
+        </div>
+        <!-- <div class="student-card">
+            <h2>Student 2</h2>
+            <button class="view-details" onclick="redirectToDetails('stu2.html')">View Details</button>
+        </div>
+        <div class="student-card">
+            <h2>Student 3</h2>
+            <button class="view-details" onclick="redirectToDetails('stu3.html')">View Details</button>
+        </div>
+        <div class="student-card">
+            <h2>Student 4</h2>
+            <button class="view-details" onclick="redirectToDetails('stu4.html')">View Details</button>
+        </div> -->
+    </div>
+    <div><img src="margika 1.png"alt=margika ></div>
+    
+    <script>
+        function redirectToDetails(detailsPage) {
+            window.location.href = detailsPage;
+        }
+        function redirectToResources(resourcesPage) {
+            window.location.href = resourcesPage;
+        }
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="student-list">
+        <div class="student-card">
+            <h2>Student 1</h2>
+            <button class="view-details" onclick="redirectToDetails('stu1.html')">View Details</button>
+            <button class="start-video-chat" onclick="startVideoChat('student1')">Start Video Chat</button>
+        </div>
+        <div class="student-card">
+            <h2>Student 2</h2>
+            <button class="view-details" onclick="redirectToDetails('stu2.html')">View Details</button>
+            <button class="start-video-chat" onclick="startVideoChat('student2')">Start Video Chat</button>
+        </div>
+        <div class="student-card">
+            <h2>Student 3</h2>
+            <button class="view-details" onclick="redirectToDetails('stu3.html')">View Details</button>
+            <button class="start-video-chat" onclick="startVideoChat('student3')">Start Video Chat</button>
+        </div>
+        <div class="student-card">
+            <h2>Student 4</h2>
+            <button class="view-details" onclick="redirectToDetails('stu4.html')">View Details</button>
+            <button class="start-video-chat" onclick="startVideoChat('student4')">Start Video Chat</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToDetails(detailsPage) {
+            window.location.href = detailsPage;
+        }
+
+        async function startVideoChat(studentId) {
+            const constraints = { video: true, audio: true };
+            
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                const videoElement = document.createElement('video');
+                videoElement.srcObject = stream;
+                videoElement.autoplay = true;
+                document.body.appendChild(videoElement);
+            } catch (error) {
+                console.error('Error accessing webcam:', error);
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="student-list">
+        <div class="student-card">
+            <h2>Student 1</h2>
+            <button class="view-details" onclick="redirectToDetails('stu1.html')">View Details</button>
+            <button class="start-video-chat" onclick="startVideoChat('student1')">Start Video Chat</button>
+        </div>
+        <! Add similar buttons for other students -->
+    <!-- </div> -->
+
+    <script>
+        function redirectToDetails(detailsPage) {
+            window.location.href = detailsPage;
+        }
+
+        async function startVideoChat(studentId) {
+            const constraints = { video: true, audio: true };
+            
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                const videoElement = document.createElement('video');
+                videoElement.srcObject = stream;
+                videoElement.autoplay = true;
+                document.body.appendChild(videoElement);
+            } catch (error) {
+                console.error('Error accessing webcam:', error);
+            }
+        }
+    </script>
+</body>
+</html> 
+
